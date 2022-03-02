@@ -36,8 +36,8 @@ function getMealList()
                         <img src = "${meal.strMealThumb}" alt = "food">
                     </div>
                     <div class = "meal-name">
-                        <h3>${meal.strMeal}</h3>
-                        <button class = "btn btn-dark recipe-btn">Get Recipe</button>
+                         <h3 style = " font-family: 'Libre Baskerville', serif;">${meal.strMeal}</h3>
+                        <button style = "font-family: 'Libre Baskerville', serif;" class = "btn btn-dark recipe-btn">Get Recipe</button>
                     </div>
                 </div>
             `;
