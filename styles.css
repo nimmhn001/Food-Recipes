@@ -369,6 +369,7 @@ a
 .recipe-title{
   letter-spacing: 1px;
   padding-bottom: 1rem;
+ font-family: 'Libre Baskerville', serif;
 }
 .recipe-category{
   background: rgb(44, 42, 42);
@@ -384,6 +385,7 @@ a
 }
 .recipe-instruct{
   padding: 1rem 0;
+ font-family: 'Libre Baskerville', serif;
 }
 .recipe-meal-img img{
   width: 100px;
