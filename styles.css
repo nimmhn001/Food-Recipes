@@ -625,6 +625,10 @@ footer h4
     margin-left: 20%;
     margin-bottom: 3%;
   }
+	i.link
+  {
+    display:none;
+  }
   a.link
   {
     display:none;
