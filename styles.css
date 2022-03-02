@@ -195,6 +195,7 @@ video
 .testimonial{
   background: #fff;
   padding: 30px;
+   margin-bottom: 2%;
 }
 .testimonial img{
   width: 100px;
@@ -682,7 +683,7 @@ footer h4
     font-size: 2rem;
   }
   .input-group{
-    margin-left: 29%;
+    margin-left: 18%;
     margin-bottom: 3%;
 
   }
