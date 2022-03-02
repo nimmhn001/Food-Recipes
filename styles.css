@@ -7,6 +7,7 @@ html
     background-color:rgb(235, 231, 238);
 }
 
+/* NAVBAR */
 .navbar-brand h1
 {
     color: white;
@@ -134,29 +135,13 @@ video
 }
 .words h1
 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Libre Baskerville', serif;
   font-weight: 800;
   color: white;
 }
 
-
-
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width:1766px)
-{
-  .words h1
-  {
-    font-size: 50px;
-    text-align: center;
-    margin-right: 30%;
-    font-family: 'Libre Baskerville', serif;
-  }
-}
-
+/* Testimonials */
 .testimonials{
   padding: 40px 0;
   background: #f1f1f1;
@@ -216,79 +201,17 @@ video
   margin-bottom: 20px;
 }
 
-
-@media screen and (max-width:960px) {
-.col{
-  flex: 100%;
-  max-width: 80%;
-}
-}
-
-@media screen and (max-width:600px) {
-.col{
-  flex: 100%;
-  max-width: 100%;
-}
-}
-
-@media screen and (max-width:424px)
-{
-  #home
-  {
-    background-image: none;
-    background-color: rgb(230, 223, 223);
-  }
-}
-
-
-/* search button */
+/* meal section */
 meal-search-box{
   margin-left: 25%;
   display: flex;
   align-items: stretch;
  margin-bottom: 2%;
 }
-/* .search-control{
-  padding: 0;
-  font-size: 1.1rem;
-  font-family: inherit;
-  outline: 0;
-  border: 1px solid rgb(221, 217, 217);
-} */
-/* .btn{
-  font-family: inherit;
-  cursor: pointer;
-  outline: 0;
-  font-size: 1.05rem;
-} */
-/* .search-btn{
-  width: 50px;
-  height: 52px;
-  font-size: 1.8rem;
-  background: rgb(202, 196, 196);
-  border: 1px solid rgb(230, 227, 227);
-  color: rgb(185, 183, 183);
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  transition: all 0.4s linear;
-  -webkit-transition: all 0.4s linear;
-  -moz-transition: all 0.4s linear;
-  -ms-transition: all 0.4s linear;
-  -o-transition: all 0.4s linear;
-}
-input{
-  width:100%;
-} */
-
-
-
-
-/* meal section */
-
 .recipe-btn:hover{
   color: rgb(34, 13, 3);
-  
 }
+
 img
 {
   width: 400px;
@@ -310,6 +233,25 @@ img
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
   margin: 2rem 0;
 }
+.meal-item p,h3
+{
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.recipe-btn
+{
+  position: relative;
+  top:50%;
+  left:32%;
+}
+p.recipe-btn
+{
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+
 .meal-img img{
   width: 100%;
   display: block;
@@ -319,6 +261,10 @@ img
 }
 .meal-name h3{
   font-size: 1.4rem;
+}
+a
+{
+  font-family:  'Libre Baskerville', serif;
 }
 .meal-details
 {
@@ -344,7 +290,7 @@ img
 }
 .input-group
 {
-  margin-left:35%;
+  margin-left:25%;
 }
 
 
@@ -381,23 +327,6 @@ img
   align-items: center;
   justify-content: center;
   opacity: 0.9;
-}
-.meal-item p,h3
-{
-  text-align: center;
-  font-family: 'Libre Baskerville', serif;
-}
-
-.recipe-btn
-{
-  position: relative;
-  top:50%;
-  left:32%;
-}
-p.recipe-btn
-{
-  text-align: center;
-  font-family: 'Libre Baskerville', serif;
 }
 
 .title
@@ -459,6 +388,7 @@ p.recipe-btn
 .recipe-link{
   margin: 1.4rem 0;
 }
+
 .recipe-link a{
   color: rgb(95, 57, 57);
   font-size: 1.2rem;
@@ -499,10 +429,15 @@ p.recipe-btn
 .image-section{
 	float: right;
 	width: 40%;
+  height: 40%;
 }
 .image-section img{
 	width: 100%;
 	height: auto;
+  border-radius: 5%;
+  max-height: 100%;
+  max-width: 100%;
+  padding-bottom: 3%;
 }
 .content-section .title{
 	text-transform: uppercase;
@@ -538,42 +473,7 @@ p.recipe-btn
 .content-section .social i:hover{
 	color:#3d3d3d;
 }
-@media screen and (max-width: 768px){
-	.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top:50px;
-}
-.content-section{
-	float:none;
-	width:100%;
-	display: block;
-	margin:auto;
-}
-.image-section{
-	float:none;
-	width:100%;
-	
-}
-.image-section img{
-	width: 100%;
-	height: auto;
-	display: block;
-	margin:auto;
-}
-.content-section .title{
-	text-align: center;
-	font-size: 19px;
-}
-.content-section .content .button{
-	text-align: center;
-}
-.content-section .content .button a{
-	padding:9px 30px;
-}
 
-}
 
 /* ---------------------------------------------- */
 
@@ -581,6 +481,7 @@ p.recipe-btn
 footer
 {
   background-color: black;
+
   padding-top: 0.5%;
   color:white;
 }
@@ -593,13 +494,19 @@ footer h4
 .location{
   text-align: center;
 }
+
 .fa-location-dot
+{
+  color:white;
+	font-size: 25px;
+	padding:0px 10px;
+}
+.loc
 {
   color:white;
 	font-size: 30px;
 	padding:0px 10px;
 }
-
 
 .social{
 	margin: 30px 40px;
@@ -616,9 +523,62 @@ footer h4
 
 /* ---------------------------------------------- */
 
-
 /* Media Queries */
 
+@media screen and (max-width:1766px)
+{
+  .words h1
+  {
+    font-size: 50px;
+    text-align: center;
+    margin-right: 30%;
+    font-family: 'Libre Baskerville', serif;
+  }
+}
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+@media screen and (max-width: 768px){
+
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;	
+}
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+.content-section .content .button{
+	text-align: center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+}
 
 @media screen and (min-width: 768px){
   #meal{
@@ -635,18 +595,18 @@ footer h4
 }
 
 @media screen and (min-width: 992px){
-#meal
-{
-  grid-template-columns: repeat(3, 1fr);
+  #meal
+  {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-}
-
-
-
-
 
 @media screen and (max-width : 996px)
 {
+  a.link
+  {
+    display:none;
+  }
   #home
   {
     background-position: top 90% left 12%;
@@ -694,16 +654,57 @@ footer h4
   .words h1
   {
     font-size: 2rem;
-  
-    
-
   }
   .input-group{
-    margin-left: 22%;
-  }
- 
+    margin-left: 29%;
+    margin-bottom: 3%;
 
+  }
 }
 
 
 
+
+/* @media screen and (max-width:424px)
+{
+  #home
+  {
+    background-image: none;
+    background-color: rgb(230, 223, 223);
+  }
+} */
+
+
+/* search button */
+
+/* .search-control{
+  padding: 0;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: 0;
+  border: 1px solid rgb(221, 217, 217);
+} */
+/* .btn{
+  font-family: inherit;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.05rem;
+} */
+/* .search-btn{
+  width: 50px;
+  height: 52px;
+  font-size: 1.8rem;
+  background: rgb(202, 196, 196);
+  border: 1px solid rgb(230, 227, 227);
+  color: rgb(185, 183, 183);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: all 0.4s linear;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+}
+input{
+  width:100%;
+} */
