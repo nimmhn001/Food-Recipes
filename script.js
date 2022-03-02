@@ -37,7 +37,7 @@ function getMealList()
                     </div>
                     <div class = "meal-name">
                         <h3>${meal.strMeal}</h3>
-                        <a href = "#" class = "recipe-btn">Get Recipe</a>
+                        <button class = "btn btn-dark recipe-btn">Get Recipe</button>
                     </div>
                 </div>
             `;
