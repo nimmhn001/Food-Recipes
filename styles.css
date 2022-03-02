@@ -131,6 +131,11 @@ video
   margin-top: 8%;
   margin-right: 0;
 }
+.input-group
+{
+  margin-left:25%;
+  padding-top: 3%;
+}
 
 
 /* ANIMATION */
@@ -556,7 +561,10 @@ footer h4
 }
 
 @media screen and (max-width: 768px){
-
+.input-group
+  {
+    margin-left: 1%;
+  }
 	.container{
 	width: 80%;
 	display: block;
@@ -608,6 +616,10 @@ footer h4
 
 @media screen and (max-width : 996px)
 {
+    .input-group{
+    margin-left: 20%;
+    margin-bottom: 3%;
+  }
   a.link
   {
     display:none;
