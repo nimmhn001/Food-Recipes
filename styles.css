@@ -8,6 +8,11 @@ html
 }
 
 /* NAVBAR */
+.location
+{
+  position: absolute;
+  right:43%;
+}
 .navbar-brand h1
 {
     color: white;
