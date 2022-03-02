@@ -186,12 +186,6 @@ video
   flex-wrap: wrap;
   justify-content: center;
 }
-.col{
-  flex: 33.33%;
-  max-width: 33.33%;
-  box-sizing: border-box;
-  padding: 15px;
-}
 .testimonial{
   background: #fff;
   padding: 30px;
