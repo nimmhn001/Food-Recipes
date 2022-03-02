@@ -561,6 +561,11 @@ footer h4
 }
 
 @media screen and (max-width: 768px){
+	.location
+  {
+    position:static;
+    right:0%;
+  }
 .input-group
   {
     margin-left: 1%;
